@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/logo.png'
+// import logo from '../../images/logo.png'
 import '../css/navbar.css';
 import { FaShoppingCart } from 'react-icons/fa'
 
@@ -51,7 +51,8 @@ export default class Navbar extends Component {
             <nav className="navbar navbar-expand-sm navbar-dark">
                 <Link to="/" className="navbar-brand fade-in">
                     <div className="logo-wrapper">
-                        <img className="logo" src={logo} alt="logo" />
+                        {/* <img className="logo" src={logo} alt="logo" /> */}
+                        <h1>Logo</h1>
                     </div>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>

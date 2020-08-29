@@ -13,20 +13,23 @@ h1 {
 
 :root {
   --mainBlack: #000000;
+  --mainBlue: #238be4;
+  --mainBrown:#5b293a;
+  --mainDark: #010101;
+  --mainGrey: #767676;
   --mainPink: #ffa69eff;
   --mainYellowish: #faf3ddff;
-  --mainGreen: #b8f2e6ff;
-  --mainBlue: #aed9e0ff;
+  --mainGreen: #62955f;
+  --mainLightBlue:#99c5e8;
+  --mainDarkBlue:#0434ac;
   --mainDarkerGrey: #313131;
   --mainWhite: #ffffffea;
   --mainOffWhite: #faf6d8;
-  --mainDark: #010101;
-  --mainGrey: #767676;
 }
 
 body {
-  background: var(--mainDark);
-  color: var(--mainWhite);
+  background: var(--mainBlue);
+  color: var(--mainLightBlue);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
@@ -75,7 +78,7 @@ body {
 
 .footer {
   font-family: 'Questrial', sans-serif;
-  background: var(--mainBlack);
+  background: var(--mainLightBlue);
   color: var(--mainGrey);
   text-decoration: none;
 }
@@ -152,22 +155,30 @@ picture img {
 }
 
 /* Snipcart Overwites */
+.snip-header {
+  background: var(--mainBlue) !important;
+}
+
 .snip-layout .snip-footer__copyright {
   font-size: 0 !important;
   height: 20px;
 }
 
-.snip-btn--highlight {
-  color: #FFFFFF !important;
-  background: var(--mainBlack) !important;
+.snip-layout .snip-footer {
+  background: var(--mainBlue) !important;
 }
 
-.snip-btn--highlight:hover {
+.snip-btn--highlight, .snip-btn--left {
+  color: #FFFFFF !important;
+  background: var(--mainBlue) !important;
+}
+
+.snip-btn--highlight:hover, .snip-btn--left:hover {
   color: #979797;
 }
 
 .snipcart-checkout {
-  background: var(--mainBlack);
+  background: var(--mainBlue);
 }
 
 @-webkit-keyframes fade-in {

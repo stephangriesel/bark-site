@@ -29,8 +29,8 @@
 }
 
 .navbar-nav .bag {
-  padding: 0.5em;
-  background: var(--mainDark);
+  padding: 0.6em;
+  background: var(--mainLightBlue);
   color: var(--mainGrey);
   font-size: 1.8em;
 }
